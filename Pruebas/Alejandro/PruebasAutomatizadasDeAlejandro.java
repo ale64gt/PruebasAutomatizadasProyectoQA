@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
-public class PruebasUnitariasDeAlejandro {
+public class PruebasAutomatizadasDeAlejandro {
 
     Base base;
     JavascriptExecutor js;
@@ -220,6 +220,7 @@ public class PruebasUnitariasDeAlejandro {
         base.setText(correoUser,By.id("signin_userName"));
         base.setText("negativo",By.id("signin_password"));
         base.clickId("genericLogin-button");
+        Thread.sleep(1000);
         assertTrue(base.isDisplayed(By.id("loginError")));
     }
     //SHOPTC47
