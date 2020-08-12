@@ -407,15 +407,13 @@ public class PruebasAutomatizadasDeEmanuelle {
         base.redirect("http://localhost:8080/admin/content/contentImages.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
         String path = System.getProperty("user.dir");
-        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\fotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofoto" +
-                "ofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofo.png");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\fotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoo.png");
         Thread.sleep(1000);
         base.clickClass("btn-success");
 
         Thread.sleep(1000);
 
-        Assert.assertEquals("fotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofoto" +
-                "ofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofo.png",base.getText(By.cssSelector("html body.body div.sm div.container div.row div.span9 div.tabbable div.tab-content div#catalogue-section.ta" +
+        Assert.assertEquals("fotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoo.png",base.getText(By.cssSelector("html body.body div.sm div.container div.row div.span9 div.tabbable div.tab-content div#catalogue-section.ta" +
                 "b-pane.active div.sm-ui-component div#isc_B.normal div#isc_C div#isc_3.sectionStack div#isc_4 div#isc_0 div#isc_1 div#isc_J.simpleTile div#isc_K table.normal tbody tr td.name nobr")));
 
         Thread.sleep(1000);
@@ -468,7 +466,7 @@ public class PruebasAutomatizadasDeEmanuelle {
 
         try{
             String path = System.getProperty("user.dir");
-            uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\prueba.txt");
+            uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\archivos\\prueba.txt");
             Thread.sleep(1000);
             base.clickClass("btn-success");
 
@@ -522,7 +520,7 @@ public class PruebasAutomatizadasDeEmanuelle {
         base.redirect("http://localhost:8080/admin/content/static/contentFiles.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
         String path = System.getProperty("user.dir");
-        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\archivos\\prueba.txt");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\foto.png");
         Thread.sleep(1000);
         base.clickClass("btn-success");
 
