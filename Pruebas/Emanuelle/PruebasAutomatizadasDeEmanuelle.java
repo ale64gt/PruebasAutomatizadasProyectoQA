@@ -38,14 +38,14 @@ public class PruebasAutomatizadasDeEmanuelle {
      */
 
     @Test
-    public void prueba1() {
+    public void prueba90() {
 
         base.redirect("http://localhost:8080/admin/content/pages/create.html");
 
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("001",By.id("code"));
+        base.setText("90",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -66,7 +66,7 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba2() {
+    public void prueba91() {
 
         base.redirect("http://localhost:8080/admin/content/pages/create.html");
 
@@ -74,7 +74,7 @@ public class PruebasAutomatizadasDeEmanuelle {
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
         base.clearText(By.id("order"));
-        base.setText("003",By.id("order"));
+        base.setText("91",By.id("order"));
         base.clearText(By.id("name0"));
         base.setText("Test",By.id("name0"));
         base.clearText(By.id("seUrl0"));
@@ -88,19 +88,19 @@ public class PruebasAutomatizadasDeEmanuelle {
 
         base.clickClass("btn-success");
 
-        Assert.assertEquals("", base.getText(By.id("store.success")));
+        Assert.assertEquals("Request completed with success", base.getText(By.id("store.success")));
 
     }
 
     @Test
-    public void prueba3() {
+    public void prueba92() {
 
         base.redirect("http://localhost:8080/admin/content/pages/create.html");
 
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("001",By.id("code"));
+        base.setText("92",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("seUrl0"));
@@ -119,14 +119,14 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba4() {
+    public void prueba93() {
 
         base.redirect("http://localhost:8080/admin/content/pages/create.html");
 
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("001",By.id("code"));
+        base.setText("93",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -147,14 +147,14 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba5() {
+    public void prueba94() {
 
         base.redirect("http://localhost:8080/admin/content/pages/create.html");
 
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("001",By.id("code"));
+        base.setText("94",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -163,7 +163,6 @@ public class PruebasAutomatizadasDeEmanuelle {
         base.setText("www.google.com",By.id("seUrl0"));
         base.clearText(By.id("descriptions0.metatagTitle"));
         base.setText("Titulo de prueba",By.id("descriptions0.metatagTitle"));
-        base.clearText(By.id("descriptions0.metatagDescription"));
         base.clearText(By.id("descriptions0.metatagDescription"));
         base.setText("Descripción de prueba",By.id("descriptions0.metatagDescription"));
 
@@ -174,7 +173,7 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba6() {
+    public void prueba95() {
 
         base.redirect("http://localhost:8080/admin/content/pages/create.html");
 
@@ -182,7 +181,7 @@ public class PruebasAutomatizadasDeEmanuelle {
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
         base.clearText(By.id("order"));
-        base.setText("0",By.id("order"));
+        base.setText("95",By.id("order"));
         base.clearText(By.id("name0"));
         base.setText("Test",By.id("name0"));
         base.clearText(By.id("seUrl0"));
@@ -196,19 +195,19 @@ public class PruebasAutomatizadasDeEmanuelle {
 
         base.clickClass("btn-success");
 
-        Assert.assertEquals("Request completed with success", base.getText(By.id("store.success")));
+        Assert.assertNotEquals("Request completed with success", base.getText(By.id("store.success")));
 
     }
 
     @Test
-    public void prueba7() {
+    public void prueba96() {
 
         base.redirect("http://localhost:8080/admin/content/pages/create.html");
 
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("001",By.id("code"));
+        base.setText("96",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -223,21 +222,20 @@ public class PruebasAutomatizadasDeEmanuelle {
 
         base.clickClass("btn-success");
 
-        Assert.assertEquals("Request completed with success", base.getText(By.id("store.success")));
+        Assert.assertNotEquals("Request completed with success", base.getText(By.id("store.success")));
 
     }
 
     @Test
-    public void prueba8() throws InterruptedException {
+    public void prueba87() throws InterruptedException {
 
         // Crear una página
-
         base.redirect("http://localhost:8080/admin/content/pages/create.html");
 
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("001",By.id("code"));
+        base.setText("97",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -273,13 +271,13 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba9() throws InterruptedException {
+    public void prueba98() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/boxes/create.html");
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("002",By.id("code"));
+        base.setText("98",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -293,7 +291,7 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba10() throws InterruptedException {
+    public void prueba99() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/boxes/create.html");
         base.clickId("visible1");
@@ -312,13 +310,13 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba11() throws InterruptedException {
+    public void prueba100() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/boxes/create.html");
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("002",By.id("code"));
+        base.setText("100",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -331,13 +329,13 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba12() throws InterruptedException {
+    public void prueba101() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/boxes/create.html");
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("002",By.id("code"));
+        base.setText("101",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -348,7 +346,7 @@ public class PruebasAutomatizadasDeEmanuelle {
         base.clickId("visible1");
         base.clickId("linkToMenu1");
         base.clearText(By.id("code"));
-        base.setText("002",By.id("code"));
+        base.setText("101",By.id("code"));
         base.clearText(By.id("order"));
         base.setText("0",By.id("order"));
         base.clearText(By.id("name0"));
@@ -362,11 +360,12 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba13() throws InterruptedException {
+    public void prueba102() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/contentImages.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
-        uploadElement.sendKeys("C:\\Users\\emanu\\Downloads\\foto.png");
+        String path = System.getProperty("user.dir");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\foto.png");
         Thread.sleep(1000);
         base.clickClass("btn-success");
 
@@ -384,11 +383,12 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba14() throws InterruptedException {
+    public void prueba103() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/contentImages.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
-        uploadElement.sendKeys("C:\\Users\\emanu\\Downloads\\fotovacia.png");
+        String path = System.getProperty("user.dir");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\fotovacia.png");
         Thread.sleep(1000);
         base.clickClass("btn-success");
 
@@ -402,17 +402,21 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba15() throws InterruptedException {
+    public void prueba104() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/contentImages.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
-        uploadElement.sendKeys("C:\\Users\\emanu\\Downloads\\fotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofo.png");
+        String path = System.getProperty("user.dir");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\fotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofoto" +
+                "ofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofo.png");
         Thread.sleep(1000);
         base.clickClass("btn-success");
 
         Thread.sleep(1000);
 
-        Assert.assertNotEquals("fotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofo.png",base.getText(By.cssSelector("html body.body div.sm div.container div.row div.span9 div.tabbable div.tab-content div#catalogue-section.tab-pane.active div.sm-ui-component div#isc_B.normal div#isc_C div#isc_3.sectionStack div#isc_4 div#isc_0 div#isc_1 div#isc_J.simpleTile div#isc_K table.normal tbody tr td.name nobr")));
+        Assert.assertEquals("fotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofoto" +
+                "ofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofotoofo.png",base.getText(By.cssSelector("html body.body div.sm div.container div.row div.span9 div.tabbable div.tab-content div#catalogue-section.ta" +
+                "b-pane.active div.sm-ui-component div#isc_B.normal div#isc_C div#isc_3.sectionStack div#isc_4 div#isc_0 div#isc_1 div#isc_J.simpleTile div#isc_K table.normal tbody tr td.name nobr")));
 
         Thread.sleep(1000);
 
@@ -425,15 +429,15 @@ public class PruebasAutomatizadasDeEmanuelle {
 
         }
 
-
     }
 
     @Test
-    public void prueba16() throws InterruptedException {
+    public void prueba105() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/contentImages.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
-        uploadElement.sendKeys("C:\\Users\\emanu\\Downloads\\prueba_imagen_grande.png");
+        String path = System.getProperty("user.dir");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\prueba_imagen_grande.png");
         Thread.sleep(1000);
         base.clickClass("btn-success");
 
@@ -456,14 +460,15 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba17() {
+    public void prueba106() {
 
         base.redirect("http://localhost:8080/admin/content/contentImages.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
 
 
         try{
-            uploadElement.sendKeys("C:\\Users\\emanu\\Desktop\\prueba.txt");
+            String path = System.getProperty("user.dir");
+            uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\prueba.txt");
             Thread.sleep(1000);
             base.clickClass("btn-success");
 
@@ -482,36 +487,15 @@ public class PruebasAutomatizadasDeEmanuelle {
     }
 
     @Test
-    public void prueba19() throws InterruptedException {
-
-        base.redirect("http://localhost:8080/admin/content/contentImages.html");
-        WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
-        uploadElement.sendKeys("C:\\Users\\emanu\\Downloads\\foto.png");
-        Thread.sleep(1000);
-        base.clickClass("btn-success");
-
-        Thread.sleep(1000);
-
-        Assert.assertEquals("foto.png",base.getText(By.cssSelector("html body.body div.sm div.container div.row div.span9 div.tabbable div.tab-content div#catalogue-section.tab-pane.active div.sm-ui-component div#isc_B.normal div#isc_C div#isc_3.sectionStack div#isc_4 div#isc_0 div#isc_1 div#isc_J.simpleTile div#isc_K table.normal tbody tr td.name nobr")));
-
-        Thread.sleep(1000);
-
-        Actions act = new Actions(base.getDriver());
-        WebElement shop = base.getDriver().findElement((By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div/div/div/div/div/div/div[2]/div/div[2]/div/div[1]/div/img")));
-        act.moveToElement(shop).click().build().perform();
-        base.acceptAlert();
-
-    }
-    
-    @Test
-    public void prueba18() {
+    public void prueba107() {
 
         base.redirect("http://localhost:8080/admin/content/contentImages.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
 
 
         try{
-            uploadElement.sendKeys("C:\\Users\\emanu\\Downloads\\!#$%&()=.png");
+            String path = System.getProperty("user.dir");
+            uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\imagenes\\!#$%&()=.png");
             Thread.sleep(1000);
             base.clickClass("btn-success");
 
@@ -529,13 +513,16 @@ public class PruebasAutomatizadasDeEmanuelle {
 
 
     }
+    
+
 
     @Test
-    public void prueba20() throws InterruptedException {
+    public void prueba088() throws InterruptedException {
 
         base.redirect("http://localhost:8080/admin/content/static/contentFiles.html");
         WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
-        uploadElement.sendKeys("C:\\Users\\emanu\\Downloads\\foto.png");
+        String path = System.getProperty("user.dir");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\archivos\\prueba.txt");
         Thread.sleep(1000);
         base.clickClass("btn-success");
 
@@ -552,6 +539,43 @@ public class PruebasAutomatizadasDeEmanuelle {
         base.acceptAlert();
 
     }
+
+    @Test
+    public void prueba109() throws InterruptedException {
+
+        base.redirect("http://localhost:8080/admin/content/static/contentFiles.html");
+        WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
+        String path = System.getProperty("user.dir");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\archivos\\prueba.txt");
+        Thread.sleep(1000);
+        base.clickClass("btn-success");
+
+        Thread.sleep(1000);
+
+        Assert.assertEquals("prueba.txt",base.getText(By.cssSelector("#isc_Ptable > tbody:nth-child(3) > tr:nth-child(1) > td:nth-child(1) > div:nth-child(1) > nobr:nth-child(1)")));
+
+    }
+
+    @Test
+    public void prueba110() throws InterruptedException {
+
+        base.redirect("http://localhost:8080/admin/content/static/contentFiles.html");
+        WebElement uploadElement = base.getDriver().findElement(By.className("input-file"));
+        String path = System.getProperty("user.dir");
+        uploadElement.sendKeys(path + "\\Pruebas\\Emanuelle\\archivos\\prueba_vacia.txt");
+        Thread.sleep(1000);
+        base.clickClass("btn-success");
+
+        Thread.sleep(1000);
+
+        try {
+            Assert.assertNotEquals("prueba_vacia.txt", base.getText(By.cssSelector("#isc_Ptable > tbody:nth-child(3) > tr:nth-child(1) > td:nth-child(1) > div:nth-child(1) > nobr:nth-child(1)")));
+        }catch(Exception e){
+            Assert.assertTrue(true);
+        }
+    }
+
+
 
     @After
     public void close(){
