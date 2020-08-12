@@ -99,7 +99,7 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[20]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[1]")).getText());
+		Assert.assertEquals("Solicitud completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[1]")).getText());
 		
 	
 	}
@@ -157,7 +157,7 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[20]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[1]")).getText());
+		Assert.assertEquals("Solicitud completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[1]")).getText());
 		
 	
 	}
@@ -229,7 +229,7 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[13]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[1]")).getText());
+		Assert.assertEquals("Solicitud completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[1]")).getText());
 		
 	
 	}
