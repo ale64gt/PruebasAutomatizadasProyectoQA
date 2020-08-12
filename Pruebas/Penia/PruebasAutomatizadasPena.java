@@ -70,7 +70,6 @@ public class PruebasAutomatizadasPena {
 		driver.findElement(By.id("formSubmitButton")).click();
 		Thread.sleep(2000);
 		Assert.assertEquals("*",driver.findElement(By.xpath("/html/body/div/div[1]/div[2]/div[2]/div/form/div[1]/div/span/font/strong")).getText());
-		Thread.sleep(2000);
 	}
 	
 	@Test
@@ -98,8 +97,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[20]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -128,8 +127,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[20]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("An error occurred in this request",driver.findElement(By.xpath("/html/body/div/table/tbody/tr[1]/td[2]/h3")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Se ha producido un error en esta solicitud",driver.findElement(By.xpath("/html/body/div/table/tbody/tr[1]/td[2]/h3")).getText());
+		
 		}
 	@Test
 	public void createStoreTest3() throws InterruptedException {
@@ -156,8 +155,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[20]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -180,8 +179,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[13]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -204,8 +203,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[13]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("An error occurred in this request",driver.findElement(By.xpath("/html/body/div/table/tbody/tr[1]/td[2]/h3")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Se ha producido un error en esta solicitud",driver.findElement(By.xpath("/html/body/div/table/tbody/tr[1]/td[2]/h3")).getText());
+	
 	
 	}
 	
@@ -228,8 +227,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[13]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -254,8 +253,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[20]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -280,8 +279,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[20]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("An error occurred in this request",driver.findElement(By.xpath("/html/body/div/table/tbody/tr[1]/td[2]/h3")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Se ha producido un error en esta solicitud",driver.findElement(By.xpath("/html/body/div/table/tbody/tr[1]/td[2]/h3")).getText());
+		
 	
 	}
 	
@@ -306,8 +305,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[20]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -328,8 +327,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div/div/form/div[3]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -350,8 +349,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div/div/form/div[3]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("The group OPT01 already exists",driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("El grupo OPT01 ya existe",driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -378,8 +377,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[34]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form[1]/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form[1]/div[1]")).getText());
+		
 	
 	}
 	
@@ -406,8 +405,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[34]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("sku already exists for another product",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("La sku ya existe",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -434,8 +433,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[34]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form[1]/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form[1]/div[1]")).getText());
+		
 	
 	}
 	
@@ -457,8 +456,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[6]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("Request completed with success",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Solicitud Completada con éxito",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	
@@ -480,8 +479,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[6]/div/button")).click();
 		Thread.sleep(2000);
-		Assert.assertEquals("This code already exist",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
-		Thread.sleep(2000);
+		Assert.assertEquals("Este código ya existe",driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[1]")).getText());
+		
 	
 	}
 	/*
