@@ -1,4 +1,4 @@
-package com.qualityassurance.tutorial;
+package Pruebas.Penia;
 
 import static org.junit.Assert.assertEquals;
 
@@ -11,7 +11,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 
 public class PruebasAutomatizadasPena {
 	
@@ -24,8 +25,8 @@ public class PruebasAutomatizadasPena {
 	By loginBottomLocator = By.xpath("//*[@id=\"loginfrm\"]/button");
 	@Before
 	public void setUp() {
-		System.setProperty("webdriver.chrome.driver", "./src/test/resources/chromedriver/chromedriver");
-		driver = new ChromeDriver();
+		System.setProperty("webdriver.gecko.driver","Pruebas\\geckodriver.exe");
+		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.get("http://localhost:8080/admin/logon.html");
 	}
@@ -36,8 +37,8 @@ public class PruebasAutomatizadasPena {
 		driver.findElement(By.id("password")).sendKeys("password");
 		Thread.sleep(2000);
 		driver.findElement(By.id("formSubmitButton")).click();
-		Assert.assertEquals("Store information",driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div[2]/span/p")).getText());
 		Thread.sleep(2000);
+		Assert.assertEquals("Información de la tienda",driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/div[2]/span/p")).getText());
 	}
 	
 	@Test
@@ -48,7 +49,6 @@ public class PruebasAutomatizadasPena {
 		driver.findElement(By.id("formSubmitButton")).click();
 		Thread.sleep(2000);
 		Assert.assertEquals("Invalid username or password",driver.findElement(By.xpath("/html/body/div/div[1]/div[1]/div")).getText());
-		Thread.sleep(2000);
 	}
 	
 	@Test
@@ -59,7 +59,7 @@ public class PruebasAutomatizadasPena {
 		driver.findElement(By.id("formSubmitButton")).click();
 		Thread.sleep(2000);
 		Assert.assertEquals("Invalid username or password",driver.findElement(By.xpath("/html/body/div/div[1]/div[1]/div")).getText());
-		Thread.sleep(2000);
+		
 	}
 
 	@Test
@@ -484,12 +484,12 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 	
 	}
-	
+	/*
 	@After
 	public void tearDown() throws InterruptedException {
 		
 		driver.quit();
 	}
-	
+	*/
 	
 }

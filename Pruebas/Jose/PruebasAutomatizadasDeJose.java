@@ -27,11 +27,11 @@ public class PruebasAutomatizadasDeJose
         System.setProperty("webdriver.gecko.driver","Pruebas\\geckodriver.exe");
         driver = new FirefoxDriver();
         driver.manage().window().maximize();
-        driver.get("localhost:8080");
+        driver.get("http://localhost:8080/shop/");
     }
 
     @Test
-    public void SHOPTC01() {
+    public void SHOPTC01() throws InterruptedException {
         WebElement searchInput = driver.findElement(By.xpath("//*[@id=\"searchField\"]"));
         searchInput.sendKeys("Vintage");
         WebElement searchButton = driver.findElement(By.xpath("/html/body/div[2]/div/div/div[2]/form[1]/div/div[2]/input"));
@@ -44,7 +44,6 @@ public class PruebasAutomatizadasDeJose
         WebElement resultText = driver.findElement(By.xpath("//*[@id=\"products-qty\"]"));
         String results = resultText.getText();
         boolean flag = results.equals("0 artículo (s) encontrado (s)");
-        driver.close();
         assertTrue(flag);
     }
 
@@ -62,7 +61,6 @@ public class PruebasAutomatizadasDeJose
         WebElement resultText = driver.findElement(By.xpath("//*[@id=\"products-qty\"]"));
         String results = resultText.getText();
         boolean flag = results.equals("0 artículo (s) encontrado (s)");
-        driver.close();
         assertTrue(flag);
     }
 
@@ -80,7 +78,6 @@ public class PruebasAutomatizadasDeJose
         WebElement resultText = driver.findElement(By.xpath("//*[@id=\"products-qty\"]"));
         String results = resultText.getText();
         boolean flag = results.equals("0 artículo (s) encontrado (s)");
-        driver.close();
         assertTrue(flag);
     }
 
@@ -96,7 +93,6 @@ public class PruebasAutomatizadasDeJose
             e.printStackTrace();
         }
         boolean flag = items + 1 == Integer.parseInt(itemsInCart.getText());
-        driver.close();
         assertTrue(flag);
     }
 
@@ -111,7 +107,6 @@ public class PruebasAutomatizadasDeJose
         }
         String url = driver.getCurrentUrl();
         boolean flag = url.contains("/shop/product/");
-        driver.close();
         assertTrue(flag);
     }
 
@@ -135,7 +130,6 @@ public class PruebasAutomatizadasDeJose
         WebElement image = driver.findElement(By.xpath("/html/body/nav[1]/div/ul[2]/li[3]/ul/span/li[1]/div/ol/li/div[1]/a/img"));
         String scr = image.getAttribute("src");
         boolean flag = scr.isEmpty();
-        driver.close();
         assertFalse(flag);
     }
 
@@ -150,7 +144,6 @@ public class PruebasAutomatizadasDeJose
             e.printStackTrace();
         }
         WebElement noItems = driver.findElement(By.xpath("/html/body/nav[1]/div/ul[2]/li[3]/ul/span/li/div/ol/h5"));
-        driver.close();
         assertNotNull(noItems);
     }
 
@@ -163,7 +156,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -175,7 +168,6 @@ public class PruebasAutomatizadasDeJose
         refreshCart.click();
         String text = quantity.getAttribute("value");
         boolean flag = text.equals("2");
-        driver.close();
         assertTrue(flag);
     }
 
@@ -194,7 +186,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -206,7 +198,6 @@ public class PruebasAutomatizadasDeJose
         refreshCart.click();
         String text = quantity.getAttribute("value");
         boolean flag = text.equals("1");
-        driver.close();
         assertTrue(flag);
     }
 
@@ -219,7 +210,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -232,7 +223,6 @@ public class PruebasAutomatizadasDeJose
         refreshCart.click();
         String text = quantity.getAttribute("value");
         boolean flag = text.equals("5");
-        driver.close();
         assertTrue(flag);
     }
 
@@ -252,7 +242,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -267,7 +257,6 @@ public class PruebasAutomatizadasDeJose
         }
         String url = driver.getCurrentUrl();
         boolean flag = url.endsWith("shop/cart/shoppingCart.html");
-        driver.close();
         assertTrue(flag);
     }
 
@@ -280,7 +269,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -295,12 +284,11 @@ public class PruebasAutomatizadasDeJose
         }
         String url = driver.getCurrentUrl();
         boolean flag = url.endsWith("/shop");
-        driver.close();
         assertTrue(flag);
     }
 
     @Test
-    public void SHOPTC14() {
+    public void SHOPTC14() throws InterruptedException {
         WebElement addToCartButton = driver.findElement(By.xpath("/html/body/section/div/div/div[1]/div[2]/div[2]/div/a"));
         addToCartButton.click();
         try {
@@ -308,7 +296,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -323,7 +311,7 @@ public class PruebasAutomatizadasDeJose
         }
         String url = driver.getCurrentUrl();
         boolean flag = url.endsWith("/shop/order/checkout.html");
-        driver.close();
+        Thread.sleep(1000);
         assertTrue(flag);
     }
 
@@ -336,7 +324,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -352,7 +340,7 @@ public class PruebasAutomatizadasDeJose
         WebElement alert = driver.findElement(By.xpath("/html/body/div[5]/div/div/form/div[2]/div/div[2]/div[2]/strong/font"));
         String message = alert.getText();
         boolean flag = message.equals("El nombre es obligatorio");
-        driver.close();
+
         assertTrue(flag);
     }
 
@@ -365,7 +353,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -383,7 +371,7 @@ public class PruebasAutomatizadasDeJose
         WebElement alert = driver.findElement(By.xpath("/html/body/div[5]/div/div/form/div[2]/div/div[2]/div[2]/strong/font"));
         String message = alert.getText();
         boolean flag = message.equals("El apellido es obligatorio");
-        driver.close();
+
         assertTrue(flag);
     }
 
@@ -396,7 +384,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -416,7 +404,7 @@ public class PruebasAutomatizadasDeJose
         WebElement alert = driver.findElement(By.xpath("/html/body/div[5]/div/div/form/div[2]/div/div[2]/div[2]/strong/font"));
         String message = alert.getText();
         boolean flag = message.equals("Se requiere la dirección de la calle");
-        driver.close();
+
         assertTrue(flag);
     }
 
@@ -429,7 +417,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -451,7 +439,7 @@ public class PruebasAutomatizadasDeJose
         WebElement alert = driver.findElement(By.xpath("/html/body/div[5]/div/div/form/div[2]/div/div[2]/div[2]/strong/font"));
         String message = alert.getText();
         boolean flag = message.equals("Se requiere la ciudad");
-        driver.close();
+
         assertTrue(flag);
     }
 
@@ -464,7 +452,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -488,7 +476,7 @@ public class PruebasAutomatizadasDeJose
         WebElement alert = driver.findElement(By.xpath("/html/body/div[5]/div/div/form/div[2]/div/div[2]/div[2]/strong/font"));
         String message = alert.getText();
         boolean flag = message.equals("Se requiere código postal");
-        driver.close();
+
         assertTrue(flag);
     }
 
@@ -501,7 +489,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -527,7 +515,7 @@ public class PruebasAutomatizadasDeJose
         WebElement alert = driver.findElement(By.xpath("/html/body/div[5]/div/div/form/div[2]/div/div[2]/div[2]/strong/font"));
         String message = alert.getText();
         boolean flag = message.equals("Se requiere dirección de correo electrónico");
-        driver.close();
+
         assertTrue(flag);
     }
 
@@ -540,7 +528,7 @@ public class PruebasAutomatizadasDeJose
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.navigate().to("localhost:8080/shop/cart/shoppingCart.html");
+        driver.navigate().to("http://localhost:8080/shop/cart/shoppingCart.html");
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
@@ -568,7 +556,13 @@ public class PruebasAutomatizadasDeJose
         WebElement alert = driver.findElement(By.xpath("/html/body/div[5]/div/div/form/div[2]/div/div[2]/div[2]/strong/font"));
         String message = alert.getText();
         boolean flag = message.equals("Se requiere el número de teléfono");
-        driver.close();
+
         assertTrue(flag);
+    }
+
+    @After
+    public void close() throws InterruptedException {
+        Thread.sleep(1000);
+        driver.close();
     }
 }
