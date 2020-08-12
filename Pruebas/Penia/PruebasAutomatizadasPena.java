@@ -88,7 +88,7 @@ public class PruebasAutomatizadasPena {
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/ul/li[1]/ul/li[2]/a")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.id("storename")).sendKeys(code);
-		driver.findElement(By.id("code")).sendKeys("499021");
+		driver.findElement(By.id("code")).sendKeys(code);
 		driver.findElement(By.id("storephone")).sendKeys("22654549");
 		driver.findElement(By.id("storeEmailAddress")).sendKeys("bitStore@shopizer.com");
 		driver.findElement(By.id("storeaddress")).sendKeys("main street 2132");
@@ -145,8 +145,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/ul/li[1]/ul/li[2]/a")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("storename")).sendKeys("Bitstore");
-		driver.findElement(By.id("code")).sendKeys(code);
+		driver.findElement(By.id("storename")).sendKeys(code+"x23");
+		driver.findElement(By.id("code")).sendKeys(code+"x23");
 		driver.findElement(By.id("storephone")).sendKeys("22654549");
 		driver.findElement(By.id("storeEmailAddress")).sendKeys("bitStore@shopizer.com");
 		driver.findElement(By.id("storeaddress")).sendKeys("main street 2132");
@@ -223,8 +223,8 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/ul/li[5]/ul/li[2]/a")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("code")).sendKeys(code);
-		driver.findElement(By.id("name0")).sendKeys("quicksilver");
+		driver.findElement(By.id("code")).sendKeys(code+"x23");
+		driver.findElement(By.id("name0")).sendKeys(code+"x23");
 		driver.findElement(By.id("title0")).sendKeys("quicksilver");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/form/div[13]/div/button")).click();
@@ -299,7 +299,7 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/ul/li[2]/ul/li[1]/a")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("category.code")).sendKeys(code);
+		driver.findElement(By.id("category.code")).sendKeys(code+"x23");
 		driver.findElement(By.id("name0")).sendKeys("T-Shirt");
 		driver.findElement(By.id("categoryHighlight0")).sendKeys("tshirt");
 		driver.findElement(By.id("descriptions0.metatagTitle")).sendKeys("t-shirt");
@@ -425,7 +425,7 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/ul/li[1]/ul/li[1]/a")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("sku")).sendKeys(code);
+		driver.findElement(By.id("sku")).sendKeys(code+"X23");
 		driver.findElement(By.id("refSku")).sendKeys("SK0024");
 		driver.findElement(By.id("name0")).sendKeys("Retro Shoes");
 		driver.findElement(By.id("descriptions0.metatagTitle")).sendKeys("retro shoes");
@@ -453,7 +453,7 @@ public class PruebasAutomatizadasPena {
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div[1]/div[3]/div/div[2]/div/ul/li[3]/ul/li[2]/a")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("code")).sendKeys(code);
+		driver.findElement(By.id("code")).sendKeys(code+"x23");
 		driver.findElement(By.id("name0")).sendKeys("Opcion1");
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("/html/body/div/div[3]/div/div[2]/div/div/div/div/form/div[6]/div/button")).click();
