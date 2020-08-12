@@ -59,7 +59,7 @@ public class PruebasAutomatizadasPena {
 		driver.findElement(By.id("formSubmitButton")).click();
 		Thread.sleep(2000);
 		Assert.assertEquals("Invalid username or password",driver.findElement(By.xpath("/html/body/div/div[1]/div[1]/div")).getText());
-		
+
 	}
 
 	@Test
